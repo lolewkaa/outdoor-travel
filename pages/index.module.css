@@ -1,0 +1,8 @@
+.houses__container {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 10px;
+}

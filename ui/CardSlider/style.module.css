@@ -1,0 +1,7 @@
+.cardSlider__img {
+    width: 100%;
+    height: 100%;
+}
+.cardSlider__slick-dots li {
+    margin: 0 20px !important; /* Горизонтальный отступ между точками */
+}

@@ -1,4 +1,5 @@
-export type House = {
+export type CatalogItemType = {
+    id: string;
     title: string;
     description: string;
     location: string;

@@ -2,11 +2,13 @@ import { createSlice } from "@reduxjs/toolkit";
 import {House} from "../../types/types";
 
 type housesState = {
-  value: Array<House>;
+  displayedHouses: House[];
+  originalHouses: House[];
 };
 
 const initialState: housesState = {
-  value: [],
+  displayedHouses: [],
+  originalHouses: []
 };
 
 const housesSlice = createSlice({
@@ -14,11 +16,16 @@ const housesSlice = createSlice({
   initialState,
   reducers: {
     getHouses: (state, action) => {
-      state.value = action.payload;
+      state.originalHouses = action.payload; 
+      state.displayedHouses = action.payload; 
+    },
+    getFilteredHouses: (state, action) => {
+      state.displayedHouses = state.originalHouses.filter((el) => 
+        el.type.includes(action.payload))
     },
   },
 });
 
-export const { getHouses } = housesSlice.actions;
+export const { getHouses, getFilteredHouses } = housesSlice.actions;
 
 export default housesSlice.reducer;

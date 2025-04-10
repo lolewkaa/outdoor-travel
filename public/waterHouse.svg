@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16.9332mm" height="16.9332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1693.32 1693.32" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   
+    .str1 {stroke:#2B2A29;stroke-width:35.27;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#2B2A29;stroke-width:17.63;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str2 {stroke:#2B2A29;stroke-width:17.63;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <polygon class="fil0 str0" points="428.3,815 1369.83,815 1529.13,889.03 270.6,889.03 "></polygon>
+  <path class="fil0 str0" d="M361.29 888.99l38.76 0 0 116.1 -0.05 0c-0.44,4.92 -8.92,8.85 -19.33,8.85 -10.41,0 -18.89,-3.93 -19.33,-8.85l-0.05 0 0 -116.1z"></path>
+  <path class="fil0 str0" d="M1423.86 887.3l38.76 0 0 116.1 -0.05 0c-0.43,4.92 -8.92,8.85 -19.32,8.85 -10.41,0 -18.9,-3.93 -19.33,-8.85l-0.06 0 0 -116.1z"></path>
+  <rect class="fil0 str1" x="428.3" y="364.92" width="941.53" height="459.72" rx="24.72" ry="33.21"></rect>
+  <rect class="fil0 str1" x="548.36" y="480.06" width="384.63" height="237.46" rx="10.1" ry="17.16"></rect>
+  <line class="fil0 str2" x1="1209.66" y1="882.56" x2="1206.94" y2="1000.37"></line>
+  <line class="fil0 str2" x1="1351.07" y1="882.07" x2="1348.36" y2="1000"></line>
+  <line class="fil0 str2" x1="1202.38" y1="950.19" x2="1354.78" y2="949.87"></line>
+  <rect class="fil0 str1" x="1096.48" y="457.92" width="185.64" height="366.72" rx="4.87" ry="26.49"></rect>
+  <path class="fil0 str0" d="M892.57 888.99l38.76 0 0 116.1 -0.05 0c-0.43,4.92 -8.92,8.85 -19.32,8.85 -10.41,0 -18.89,-3.93 -19.33,-8.85l-0.06 0 0 -116.1z"></path>
+  <path class="fil0 str2" d="M91.67 1024.21c63.74,6.18 129.59,-50.67 140.62,-54.16 45.23,-14.31 76.78,16.69 106.5,37 67.64,46.22 99.18,-30.64 151.6,-26.48 42.34,3.35 51.19,32.75 134.45,30.95 39.5,-0.84 84.57,-48.47 150.78,-26.66 33.85,11.15 111.06,47.77 174.24,26.64 61.7,-20.64 169.13,-47.09 233.55,-12.65 77.33,41.32 121.39,-13.43 196.7,6.46 141.55,37.4 235.51,-27.12 237.34,-27.53"></path>
+  <path class="fil0 str2" d="M233.79 1224.29c58.93,47.85 178.08,29.64 215.08,4.35 67.65,-46.23 99.17,30.64 151.6,26.48 42.34,-3.35 51.19,-32.74 134.45,-30.95 39.5,0.84 84.57,48.47 150.78,26.66 33.84,-11.15 111.05,-47.77 174.23,-26.64 61.71,20.64 169.13,47.08 233.55,12.65 77.32,-41.32 147.03,47.3 255.29,-15.61"></path>
+  <path class="fil0 str2" d="M844.58 1130.75c-122.26,13.72 -143.19,-45.41 -215.6,-32.39 -61.93,11.14 -160.32,51.1 -203.03,33.47 -183.7,-75.85 -139.72,13.34 -266.61,5.98"></path>
+  <path class="fil0 str2" d="M1539.37 1115.82c-122,37.36 -149.94,-25.61 -225.37,-21.21 -60.97,3.55 -72.51,49.82 -203.77,27.89"></path>
+  <line class="fil0 str2" x1="1134.65" y1="615.25" x2="1134.98" y2="644.15"></line>
+ </g>
+</svg>

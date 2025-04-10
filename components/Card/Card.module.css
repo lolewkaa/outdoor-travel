@@ -3,7 +3,7 @@
     height: 380px;
     border-radius: 5px;
     padding: 2px;
-    background-color: #f4e6cb;
+    background-color: #d7ba84;
     position: relative;
 }
 .card__slider {
@@ -33,7 +33,7 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.815);
     border: none;
-    background-image: url('../../assets/heart.ico');
+    background-image: url('../../public/heart.ico');
     background-size: 20px 20px;
     background-position: center;
     background-repeat: no-repeat;

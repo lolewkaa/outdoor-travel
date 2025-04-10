@@ -3,5 +3,5 @@
     height: 100%;
 }
 .cardSlider__slick-dots li {
-    margin: 0 20px !important; /* Горизонтальный отступ между точками */
+    margin: 0 20px !important;
 }

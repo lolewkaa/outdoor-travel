@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16.9332mm" height="16.9332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1693.32 1693.32" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   
+    .str0 {stroke:#2B2A29;stroke-width:17.63;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:17.63;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil2 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#2B2A29}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <path class="fil0 str0" d="M270.79 1392.64l1179.52 0 1.8 -579.59 -580.94 -466.55 -600.39 465.97 0.01 580.17zm-52.64 55.02l1289.21 0 0 -668.31 -637.69 -518.38 -651.52 518.38 0 668.31z"></path>
+  <rect class="fil1 str0" x="455.88" y="1005.42" width="230.81" height="306.24"></rect>
+  <rect class="fil1 str0" x="1050.62" y="1005.25" width="223.74" height="306.42"></rect>
+  <line class="fil1 str1" x1="270.79" y1="1392.64" x2="395.82" y2="1311.37"></line>
+  <line class="fil1 str1" x1="1450.31" y1="1392.64" x2="1329.69" y2="1311.37"></line>
+  <line class="fil1 str1" x1="868.82" y1="504.38" x2="868.22" y2="356.71"></line>
+  <rect class="fil1 str0" x="745.7" y="1005.08" width="243.99" height="306.58"></rect>
+  <polygon class="fil1 str0" points="745.06,946.9 989.58,946.9 989.58,605.44 868.64,508.17 745.06,605.44 "></polygon>
+  <line class="fil1 str1" x1="270.78" y1="812.47" x2="391.5" y2="876.84"></line>
+  <line class="fil1 str1" x1="1452.11" y1="813.05" x2="1333.42" y2="876.84"></line>
+  <line class="fil1 str1" x1="777.82" y1="1148.77" x2="778.12" y2="1194.54"></line>
+  <polygon class="fil2 str0" points="1051.48,656.84 1274.67,837.18 1274.19,946.76 1051.48,946.81 "></polygon>
+  <polygon class="fil1 str0" points="395.82,1311.37 1329.69,1311.37 1329.69,881.56 867.76,504.38 395.82,881.56 "></polygon>
+  <polygon class="fil2 str0" points="674.3,656.84 451.12,837.18 451.59,946.76 674.3,946.81 "></polygon>
+ </g>
+</svg>

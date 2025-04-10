@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16.9332mm" height="16.9332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1693.32 1693.32" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   
+    .str2 {stroke:#2B2A29;stroke-width:35.29;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:35.29;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str3 {stroke:#2B2A29;stroke-width:17.59;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str4 {stroke:#2B2A29;stroke-width:17.63;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#2B2A29;stroke-width:35.29;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:none;fill-rule:nonzero}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <path class="fil0 str0" d="M853 501.2c216.63,0 598.64,172.69 599.2,282.45 -0.37,156.47 -0.75,312.95 -1.12,469.42 -205.78,122.37 -989.24,124.56 -1199.44,0 -0.63,-156.79 -1.25,-313.59 -1.88,-470.38 1.74,-108.33 394.81,-281.49 603.24,-281.49z"></path>
+  <path class="fil1 str1" d="M1452.23 803.65c-87.89,74.05 -379.13,80.99 -616.83,84.51 -218.63,-3.93 -513.66,-13.38 -585.67,-85.47"></path>
+  <rect class="fil1 str2" x="730.83" y="981.39" width="240.3" height="362.27"></rect>
+  <path class="fil1 str3" d="M730.84 1116.59c-158.75,-5.33 -391.01,-21.27 -480.5,-73.97"></path>
+  <path class="fil1 str3" d="M974.46 1116.59c158.75,-5.33 391.01,-21.27 480.5,-73.97"></path>
+  <line class="fil1 str4" x1="459.01" y1="871.07" x2="456.73" y2="1305.22"></line>
+  <path class="fil1 str1" d="M1053.46 549.85c-29.49,28.59 -127.2,31.27 -206.95,32.63 -73.35,-1.52 -172.33,-5.17 -196.49,-33"></path>
+  <line class="fil1 str4" x1="1254.16" y1="871.07" x2="1251.88" y2="1305.22"></line>
+  <path class="fil1 str3" d="M464.19 859.39c92.28,-99.64 237.75,-241.41 334.88,-278.29"></path>
+  <path class="fil1 str3" d="M1252.02 859.39c-92.28,-99.64 -237.75,-241.41 -334.88,-278.29"></path>
+  <path class="fil1 str3" d="M850.99 885.85c-101.43,-99.64 -261.32,-241.41 -368.08,-278.29"></path>
+  <path class="fil0 str0" d="M853 501.2c216.63,0 598.64,172.69 599.2,282.45 -0.37,156.47 -0.75,312.95 -1.12,469.42 -205.78,122.37 -989.24,124.56 -1199.44,0 -0.63,-156.79 -1.25,-313.59 -1.88,-470.38 1.74,-108.33 394.81,-281.49 603.24,-281.49z"></path>
+  <path class="fil1 str3" d="M847.8 885.79c101.43,-99.64 261.32,-241.41 368.08,-278.29"></path>
+ </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16.9332mm" height="16.9332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1693.32 1693.32" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   
+    .str3 {stroke:#2B2A29;stroke-width:35.29;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str2 {stroke:#2B2A29;stroke-width:17.63;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#2B2A29;stroke-width:35.27;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str4 {stroke:#2B2A29;stroke-width:17.63;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2B2A29;stroke-width:35.29;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil2 {fill:none;fill-rule:nonzero}
+    .fil1 {fill:#2B2A29}
+   
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <line class="fil0 str0" x1="252.75" y1="1408.01" x2="1429.29" y2="1408.01"></line>
+  <line class="fil0 str0" x1="254.85" y1="583.53" x2="252.76" y2="1408.03"></line>
+  <line class="fil0 str0" x1="1431.38" y1="693.69" x2="1429.29" y2="1408.03"></line>
+  <polygon class="fil1 str1" points="213.23,531.6 687.82,268.12 1478.27,640.74 1478.27,700.27 686.72,326.55 213.23,591.13 "></polygon>
+  <polygon class="fil2 str2" points="972.11,559.18 1233.32,689.26 1233.34,821.62 970.96,821.53 "></polygon>
+  <polygon class="fil0 str2" points="397.71,821.26 778.93,821.26 778.93,507.62 694.59,469.2 397.71,629.52 "></polygon>
+  <rect class="fil0 str2" x="396.53" y="974.15" width="379.38" height="284.61"></rect>
+  <rect class="fil0 str2" x="973.92" y="975.99" width="263.32" height="434.22"></rect>
+  <path class="fil0 str3" d="M1151.37 495.33l104.61 26.21 0 -136.68 -0.13 0c-1.18,-4.95 -24.08,-8.9 -52.16,-8.9 -28.1,0 -50.98,3.95 -52.19,8.9l-0.13 0 0 110.47z"></path>
+  <line class="fil0 str4" x1="586.76" y1="974.15" x2="584.48" y2="1258.76"></line>
+  <line class="fil0 str4" x1="589.16" y1="530.83" x2="586.88" y2="815.44"></line>
+  <line class="fil0 str4" x1="1103.38" y1="624.21" x2="1101.1" y2="821.57"></line>
+  <line class="fil0 str4" x1="1016.2" y1="1179.06" x2="1016.5" y2="1224.83"></line>
+ </g>
+</svg>

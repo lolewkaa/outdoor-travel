@@ -1,12 +1,6 @@
 'use client'
 import React from "react";
-import classes from "./style.module.css";
-
-type PropsButton = {
-  text: string;
-  clickButton: () => void;
-  buttonStyle: string;
-};
+import { PropsButton } from "./types";
 
 const Button: React.FC<Partial<PropsButton>> = ({
   text,

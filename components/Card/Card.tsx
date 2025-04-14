@@ -1,12 +1,9 @@
-import { CatalogItemType } from "@/types/types";
 import classes from "./Card.module.css";
 import Link from "next/link";
 import CardSlider from "@/ui/CardSlider/CardSlider";
 import Button from "@/ui/Button/Button";
+import { PropsCard } from "./types";
 
-type PropsCard = {
-  item: CatalogItemType;
-};
 const Card: React.FC<PropsCard> = ({ item }) => {
   return (
     

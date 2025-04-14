@@ -1,10 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {House} from "../../types/types";
-
-type housesState = {
-  displayedHouses: House[];
-  originalHouses: House[];
-};
+import { housesApi } from "../api/housesApi";
+import { housesState } from "./types";
 
 const initialState: housesState = {
   displayedHouses: [],
@@ -15,17 +11,24 @@ const housesSlice = createSlice({
   name: "houses",
   initialState,
   reducers: {
-    getHouses: (state, action) => {
-      state.originalHouses = action.payload; 
-      state.displayedHouses = action.payload; 
-    },
     getFilteredHouses: (state, action) => {
       state.displayedHouses = state.originalHouses.filter((el) => 
         el.type.includes(action.payload))
     },
   },
+  extraReducers: (builder) => {
+    builder
+      .addMatcher(
+        housesApi.endpoints.getHouses.matchFulfilled,
+        (state, { payload }) => {
+          state.originalHouses = payload;
+          state.displayedHouses = payload;
+          console.log(payload)
+        },
+      );
+  },
 });
 
-export const { getHouses, getFilteredHouses } = housesSlice.actions;
+export const { getFilteredHouses } = housesSlice.actions;
 
 export default housesSlice.reducer;

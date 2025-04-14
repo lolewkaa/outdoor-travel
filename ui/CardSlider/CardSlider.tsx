@@ -1,21 +1,24 @@
 "use client";
-import { CatalogItemType } from "@/types/types";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from "./style.module.css";
-
-type PropsSlider = {
-  item: CatalogItemType;
-};
+import {
+  dotsStyles,
+  nextArrowStylesCard,
+  prevArrowStylesCard,
+  sliderItemContainerStyles,
+  sliderItemStyles,
+} from "../../utils/constants";
+import { PropsSlider } from "./types";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", position: "absolute", right: "2px" }}
+      style={{ ...style, ...nextArrowStylesCard }}
       onClick={onClick}
     />
   );
@@ -26,7 +29,10 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", position: "absolute", left: '2px', zIndex: '100' }}
+      style={{
+        ...style,
+        ...prevArrowStylesCard
+      }}
       onClick={onClick}
     />
   );
@@ -43,27 +49,19 @@ export default function CardSlider({ item }: PropsSlider) {
     prevArrow: <SamplePrevArrow />,
     appendDots: (dots) => (
       <div
-        style={{
-          height: "20px",
-          display: "flex",
-          justifyContent: "center",
-          overflow: "hidden",
-          width: "87%",
-          position: "absolute",
-          bottom: "10px",
-          left: '10px'
-        }}
+        style={{ ...dotsStyles }}
       >
-        <div style={{ margin: "0", padding: "0", display: "flex" }}>
+        <div style={{ ...sliderItemContainerStyles }}>
           {React.Children.map(dots, (dot) => (
-            <div style={{ height: '10px', width: '10px', marginLeft:'5px', marginRight:'5px' }}>
+            <div
+              style={{ ...sliderItemStyles }}
+            >
               {dot}
             </div>
           ))}
         </div>
       </div>
     ),
-  
   };
 
   return (

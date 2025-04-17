@@ -10,4 +10,7 @@ export type CatalogItemType = {
     type: Array<string>;
     fullLocation: string;
     info: string;
+    environment: Array<string>;
+    comfort: Array<string>;
+    entertainment: Array<string>;
 }

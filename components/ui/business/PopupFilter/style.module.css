@@ -1,0 +1,24 @@
+.filterPopup__btn {
+    border: none;
+    background-color: #e0c695;
+    cursor: pointer;
+    position: absolute;
+    padding: 0;
+    right: 10px;
+    top: 10px;
+}
+.filterPopup__container {
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 800px;
+  width: 90%;
+  align-content: flex-start;
+  column-gap: 50px;
+}
+
+.filterPopup__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,9 +1,9 @@
-'use client'
-import { useGetHousesQuery } from '../../store/api/housesApi';
-import Card from '../Card/Card';
+"use client";
+import { useGetHousesQuery } from "../../store/api/housesApi";
+import Card from "../Card/Card";
 import classes from "./catalog.module.css";
-import { useSelector } from 'react-redux';
-import { RootState } from '@/store/store';
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 
 export default function CatalogList() {
   const { error, isLoading } = useGetHousesQuery();
@@ -15,9 +15,12 @@ export default function CatalogList() {
 
   return (
     <div className={classes.catalogList}>
+      <div className={classes.catalogList__box}>
         {houses?.map((house) => (
-          <Card key={house.id} item={house}/> 
+          <Card key={house.id} item={house} />
         ))}
+      </div>
     </div>
+    
   );
 }

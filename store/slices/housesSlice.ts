@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { housesApi } from "../api/housesApi";
 import { housesState } from "./types";
 import { SelectedFilters } from "@/components/ui/business/FilterCheckbox/types";
+import { filterBy } from "@/utils/constants";
 
 const initialState: housesState = {
   displayedHouses: [],
@@ -36,15 +37,15 @@ const housesSlice = createSlice({
         state.selectedFilters[category].splice(index, 1);
       }
 
-      applyAllFilters(state);
+      housesSlice.caseReducers.applyAllFilters(state);
     },
     selectSingleType: (state, action: PayloadAction<string>) => {
       state.selectedFilters.typesOfHouses = [action.payload];
-      applyAllFilters(state);
+      housesSlice.caseReducers.applyAllFilters(state);
     },
     setPriceRange: (state, action: PayloadAction<[number, number]>) => {
       state.selectedFilters.priceRange = action.payload;
-      applyAllFilters(state);
+      housesSlice.caseReducers.applyAllFilters(state);
     },
     resetFilters: (state) => {
       state.selectedFilters = {
@@ -56,6 +57,23 @@ const housesSlice = createSlice({
         priceRange: [1000, 50000],
       };
       state.displayedHouses = state.originalHouses;
+    },
+    applyAllFilters: (state) => {
+      let filteredHouses = [...state.originalHouses];
+
+      filteredHouses = filterBy(state.selectedFilters.environment, filteredHouses, 'environment');
+      filteredHouses = filterBy(state.selectedFilters.comfort, filteredHouses, 'comfort');
+      filteredHouses = filterBy(state.selectedFilters.entertainment, filteredHouses, 'entertainment');
+      filteredHouses = filterBy(state.selectedFilters.typesOfHouses, filteredHouses, 'type');
+      filteredHouses = filterBy(state.selectedFilters.typePlacement, filteredHouses, 'description');
+
+      const [minPrice, maxPrice] = state.selectedFilters.priceRange;
+      filteredHouses = filteredHouses.filter(house => {
+        const priceNumber = parseInt(house.price.replace(/\s+/g, '').replace('₽', ''));
+        return priceNumber >= minPrice && priceNumber <= maxPrice;
+      });
+
+      state.displayedHouses = filteredHouses;
     },
   },
   extraReducers: (builder) => {
@@ -69,62 +87,7 @@ const housesSlice = createSlice({
   },
 });
 
-function applyAllFilters(state: housesState) {
-  let filteredHouses = [...state.originalHouses];
 
-  // Фильтрация по окружению
-  if (state.selectedFilters.environment.length > 0) {
-    filteredHouses = filteredHouses.filter((house) =>
-      state.selectedFilters.environment.every((filter) =>
-        house.environment.includes(filter)
-      )
-    );
-  }
-
-  // Фильтрация по удобствам
-  if (state.selectedFilters.comfort.length > 0) {
-    filteredHouses = filteredHouses.filter((house) =>
-      state.selectedFilters.comfort.every((filter) =>
-        house.comfort.includes(filter)
-      )
-    );
-  }
-
-  // Фильтрация по развлечениям
-  if (state.selectedFilters.entertainment.length > 0) {
-    filteredHouses = filteredHouses.filter((house) =>
-      state.selectedFilters.entertainment.every((filter) =>
-        house.entertainment.includes(filter)
-      )
-    );
-  }
-
-  // Фильтрация по типу дома
-  if (state.selectedFilters.typesOfHouses.length > 0) {
-    filteredHouses = filteredHouses.filter((house) =>
-      state.selectedFilters.typesOfHouses.every((filter) =>
-        house.type.includes(filter)
-      )
-    );
-  }
-
-  // Фильтрация по типу размещения
-  if (state.selectedFilters.typePlacement.length > 0) {
-    filteredHouses = filteredHouses.filter((house) =>
-      state.selectedFilters.typePlacement.every((filter) =>
-        house.description.includes(filter)
-      )
-    );
-  }
-
-  const [minPrice, maxPrice] = state.selectedFilters.priceRange;
-  filteredHouses = filteredHouses.filter(house => {
-    const priceNumber = parseInt(house.price.replace(/\s+/g, '').replace('₽', ''));
-    return priceNumber >= minPrice && priceNumber <= maxPrice;
-  });
-
-  state.displayedHouses = filteredHouses;
-}
 export const { toggleFilter, selectSingleType, setPriceRange } = housesSlice.actions;
 
 export default housesSlice.reducer;

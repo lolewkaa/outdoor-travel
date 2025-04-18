@@ -1,3 +1,4 @@
+import { CatalogItemType, FilterableProperty, FilterConfig } from "@/types/types";
 import { CSSProperties } from "react";
 
 export const nextArrowStyles: CSSProperties = {
@@ -132,3 +133,42 @@ export const entertainment = [
   "Караоке",
   "Веревочный парк"
 ]
+
+export const filterConfigs: FilterConfig[] = [
+  {
+    name: "Тип размещения",
+    category: "typePlacement",
+    array: typePlacement,
+  },
+  {
+    name: "Типы домов",
+    category: "typesOfHouses",
+    array: typesOfHouses,
+  },
+  {
+    name: "Окружение",
+    category: "environment",
+    array: environment,
+  },
+  {
+    name: "Удобства",
+    category: "comfort",
+    array: comfort,
+  },
+  {
+    name: "Впечатления",
+    category: "entertainment",
+    array: entertainment,
+  },
+];
+
+export function filterBy (selectedFilters: string[], filteredHouses: CatalogItemType[], property: FilterableProperty) {
+  if (selectedFilters.length > 0) {
+    filteredHouses = filteredHouses.filter((house) =>
+      selectedFilters.every((filter) =>
+        house[property].includes(filter)
+      )
+    );
+  }
+  return filteredHouses;
+}

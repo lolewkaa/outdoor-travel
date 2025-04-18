@@ -1,3 +1,5 @@
+import { SelectedFilters } from "@/components/ui/business/FilterCheckbox/types";
+
 export type CatalogItemType = {
     id: string;
     title: string;
@@ -14,3 +16,11 @@ export type CatalogItemType = {
     comfort: Array<string>;
     entertainment: Array<string>;
 }
+
+export type FilterableProperty = 'environment' | 'comfort' | 'entertainment' | 'type' | 'description';
+
+export type FilterConfig = {
+  name: string;
+  category: keyof SelectedFilters;
+  array: string[];
+};

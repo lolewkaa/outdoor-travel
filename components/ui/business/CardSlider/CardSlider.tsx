@@ -10,10 +10,10 @@ import {
   prevArrowStylesCard,
   sliderItemContainerStyles,
   sliderItemStyles,
-} from "../../utils/constants";
-import { PropsSlider } from "./types";
+} from "../../../../utils/constants";
+import { ArrowProps, PropsSlider } from "./types";
 
-function SampleNextArrow(props) {
+function SampleNextArrow(props: ArrowProps) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -24,7 +24,7 @@ function SampleNextArrow(props) {
   );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrow(props: ArrowProps) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -47,9 +47,9 @@ export default function CardSlider({ item }: PropsSlider) {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode) => (
       <div
-        style={{ ...dotsStyles }}
+        style={dotsStyles}
       >
         <div style={{ ...sliderItemContainerStyles }}>
           {React.Children.map(dots, (dot) => (

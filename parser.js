@@ -28,14 +28,28 @@ async function parseDetailedData(url) {
 
     const fullLocation = $(`.area-info span`).text();
 
-    const info = $('.about__item-domestic').text().trim(); 
+    const info = $('.about__item-domestic').text().trim();
 
-    // Возвращаем объект с полями additionalData и type (массив)
+    const firstComfortList = $('ul.object__comforts-list').eq(0);
+    const comfort = firstComfortList.find('li')
+        .map((i, el) => $(el).text().trim())
+        .get();
+
+    const secondComfortList = $('ul.object__comforts-list').eq(1);
+    const entertainment = secondComfortList.find('li')
+        .map((i, el) => $(el).text().trim())
+        .get();
+
+    const environment = $(`.about__item-content span`).map((i, el) => $(el).text().trim()).get();
+
     return {
         about: cleanedAdditionalData,
         type: types,
         fullLocation: fullLocation,
         info: info,
+        entertainment: entertainment,
+        environment: environment,
+        comfort: comfort,
     };
 }
 
@@ -58,7 +72,7 @@ async function parseData(url) {
 
         const id = link.split('/')[2];
 
-        const { about, type, fullLocation, info } = await parseDetailedData(fullUrl);
+        const { about, type, fullLocation, info, entertainment, environment, comfort } = await parseDetailedData(fullUrl);
 
         $(element).find('.swiper-wrapper img').each((index, imgElement) => {
             const imgPath = $(imgElement).attr('data-src') || $(imgElement).attr('src');
@@ -68,7 +82,7 @@ async function parseData(url) {
             }
         });
 
-        results.push({ id, title, description, location, gallery, price, discount, about, type, fullLocation, info }); 
+        results.push({ id, title, description, location, gallery, price, discount, about, type, fullLocation, info, entertainment, environment, comfort }); 
     }
 
     return results;

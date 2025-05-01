@@ -1,8 +1,9 @@
 import classes from "./Card.module.css";
 import Link from "next/link";
-import CardSlider from "@/ui/CardSlider/CardSlider";
-import Button from "@/ui/Button/Button";
+
+import Button from "@/components/ui/ui-kit/Button/Button";
 import { PropsCard } from "./types";
+import CardSlider from "../ui/business/CardSlider/CardSlider";
 
 const Card: React.FC<PropsCard> = ({ item }) => {
   return (

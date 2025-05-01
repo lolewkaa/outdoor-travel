@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from "./style.module.css";
 import { useDispatch } from "react-redux";
-import { getFilteredHouses } from "@/store/slices/housesSlice";
+// import housesStore from "../../../../store/zustand/index";
 import {
   nextArrowStyles,
   prevArrowStyles,
@@ -13,6 +13,7 @@ import {
   filters,
 } from "@/utils/constants";
 import { ArrowProps } from "./types";
+import { selectSingleType } from "@/store/slices/housesSlice";
 
 function SampleNextArrow(props: ArrowProps) {
   const { className, style, onClick } = props;
@@ -48,12 +49,17 @@ export default function FilterSlider() {
     style: filterSliderStyles,
   };
   const dispatch = useDispatch();
+
+  // const handleFilterClick = (type: string) => {
+  //   housesStore.selectSingleType(type);
+  // };
+
   return (
-    <Slider {...settings} >
+    <Slider {...settings}>
       {filters.map((filter) => (
         <div
           key={filter.type}
-          onClick={() => dispatch(getFilteredHouses(filter.type))}
+          onClick={() => dispatch(selectSingleType(filter.type))}
           className={classes.filterSlider}
         >
           <img

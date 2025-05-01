@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from "./style.module.css";
 import { useDispatch } from "react-redux";
-
+// import housesStore from "../../../../store/zustand/index";
 import {
   nextArrowStyles,
   prevArrowStyles,
@@ -49,6 +49,10 @@ export default function FilterSlider() {
     style: filterSliderStyles,
   };
   const dispatch = useDispatch();
+
+  // const handleFilterClick = (type: string) => {
+  //   housesStore.selectSingleType(type);
+  // };
 
   return (
     <Slider {...settings}>

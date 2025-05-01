@@ -12,13 +12,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 800px;
-  width: 90%;
+  width: 70%;
   align-content: flex-start;
   column-gap: 50px;
+  
 }
 
 .filterPopup__box {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+  padding: 20px;
 }

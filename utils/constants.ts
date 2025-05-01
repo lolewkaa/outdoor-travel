@@ -172,3 +172,21 @@ export function filterBy (selectedFilters: string[], filteredHouses: CatalogItem
   }
   return filteredHouses;
 }
+
+// Паттерны функционального программирования
+// Композиция функций - compose => справа налево
+// Пайплайн - pipe => слева направо
+export const compose = (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ...fns: Array<(...args: any[]) => any>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+) => (x: any) => fns.reduceRight((p, f) => f(p), x);
+
+// compose(
+//   filterByComfort,
+//   filterByEnvironment,
+//   filterByOther,
+// )(filteredHouses)
+
+// let filteredByComfort = filterByComfort(array);
+// let filterByEnv = filterByEnvironment(filteredByComfort)

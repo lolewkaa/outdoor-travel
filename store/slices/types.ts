@@ -3,12 +3,15 @@ export type housesState = {
   displayedHouses: CatalogItemType[];
   originalHouses: CatalogItemType[];
   selectedFilters: SelectedFilters;
-  };
-  type SelectedFilters = {
-    environment: string[];
-    comfort: string[];
-    entertainment: string[];
-    typesOfHouses: string[];
-    typePlacement: string[];
-    priceRange: [number, number];
-  }
+  sortType: SortType;
+};
+type SelectedFilters = {
+  environment: string[];
+  comfort: string[];
+  entertainment: string[];
+  typesOfHouses: string[];
+  typePlacement: string[];
+  priceRange: [number, number];
+};
+
+export type SortType = "cheapest" | "expensive" | "none";

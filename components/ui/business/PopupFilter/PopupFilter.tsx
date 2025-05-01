@@ -7,8 +7,12 @@ import {
   filterConfigs,
 } from "@/utils/constants";
 import PriceSelector from "@/components/PriceSelector/PriceSelector";
+import Button from "../../ui-kit/Button/Button";
+import { useDispatch } from "react-redux";
+import { resetFilters } from "@/store/slices/housesSlice";
 
 const PopupFilter: React.FC<PropsPopupFilter> = ({ setIsOpenPopupFilter }) => {
+  const dispatch = useDispatch();
   const handleClose = () => setIsOpenPopupFilter(false);
   return (
     <Popup onClose={handleClose}>
@@ -31,6 +35,7 @@ const PopupFilter: React.FC<PropsPopupFilter> = ({ setIsOpenPopupFilter }) => {
           ))}
         </div>
       </div>
+      <Button clickButton={() => dispatch(resetFilters())} text="Сбросить" buttonStyle={styles.filterPopup__reset_btn}/>
     </Popup>
   );
 };
